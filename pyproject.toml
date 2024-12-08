@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "participant-service"
+version = "0.1.0"
+description = "basic participant manager api service"
+authors = ["wiratana <andikawiratana@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["standard"], version = "^0.115.6"}
+mongoengine = "^0.29.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
