@@ -103,12 +103,12 @@ def get_event_by_id(id):
     return json.loads(event.to_json())
 
 
-@app.get("/participant/get-dashboard")
+@app.get("/participant/get-checkout-event")
 def get_dashboard():
     return json.loads(CheckoutEvents.objects.to_json())
 
 
-@app.get("/participant/get-dashboard/{id}")
+@app.get("/participant/get-checkout-event/{id}")
 def get_dashboard(id):
     checkout_event = CheckoutEvents.objects(id=bson.ObjectId(id)).first()
 
